@@ -14,5 +14,10 @@ namespace PracticaFinalProgramacionBasica
         {
             InitializeComponent();
         }
+
+        private void frmEliminarPaciente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

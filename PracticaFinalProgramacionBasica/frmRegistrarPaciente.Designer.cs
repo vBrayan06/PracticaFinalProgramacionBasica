@@ -46,6 +46,8 @@
             btnRegistrar = new Button();
             btnLimpiar = new Button();
             btnVolver = new Button();
+            splitter1 = new Splitter();
+            splitter2 = new Splitter();
             SuspendLayout();
             // 
             // lblRegistroPacientes
@@ -62,7 +64,7 @@
             // 
             lblCedula.AutoSize = true;
             lblCedula.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCedula.Location = new Point(100, 80);
+            lblCedula.Location = new Point(103, 86);
             lblCedula.Name = "lblCedula";
             lblCedula.Size = new Size(75, 25);
             lblCedula.TabIndex = 2;
@@ -70,14 +72,14 @@
             // 
             // txtCedula
             // 
-            txtCedula.Location = new Point(281, 85);
+            txtCedula.Location = new Point(284, 91);
             txtCedula.Name = "txtCedula";
             txtCedula.Size = new Size(254, 23);
             txtCedula.TabIndex = 3;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(281, 134);
+            textBox1.Location = new Point(284, 140);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(254, 23);
             textBox1.TabIndex = 5;
@@ -86,7 +88,7 @@
             // 
             lblNombre.AutoSize = true;
             lblNombre.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblNombre.Location = new Point(100, 129);
+            lblNombre.Location = new Point(103, 135);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(172, 25);
             lblNombre.TabIndex = 4;
@@ -94,7 +96,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(281, 180);
+            textBox2.Location = new Point(284, 186);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(254, 23);
             textBox2.TabIndex = 7;
@@ -103,7 +105,7 @@
             // 
             lblEdad.AutoSize = true;
             lblEdad.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblEdad.Location = new Point(100, 178);
+            lblEdad.Location = new Point(103, 184);
             lblEdad.Name = "lblEdad";
             lblEdad.Size = new Size(58, 25);
             lblEdad.TabIndex = 6;
@@ -113,7 +115,7 @@
             // 
             lblSexo.AutoSize = true;
             lblSexo.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblSexo.Location = new Point(100, 227);
+            lblSexo.Location = new Point(103, 233);
             lblSexo.Name = "lblSexo";
             lblSexo.Size = new Size(56, 25);
             lblSexo.TabIndex = 8;
@@ -123,7 +125,7 @@
             // 
             cmbSexo.FormattingEnabled = true;
             cmbSexo.Items.AddRange(new object[] { "Masculino", "Femenino" });
-            cmbSexo.Location = new Point(281, 229);
+            cmbSexo.Location = new Point(284, 235);
             cmbSexo.Name = "cmbSexo";
             cmbSexo.Size = new Size(254, 23);
             cmbSexo.TabIndex = 9;
@@ -132,7 +134,7 @@
             // 
             lblDiagnostico.AutoSize = true;
             lblDiagnostico.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblDiagnostico.Location = new Point(100, 276);
+            lblDiagnostico.Location = new Point(103, 282);
             lblDiagnostico.Name = "lblDiagnostico";
             lblDiagnostico.Size = new Size(116, 25);
             lblDiagnostico.TabIndex = 10;
@@ -140,7 +142,7 @@
             // 
             // txtDiagnostico
             // 
-            txtDiagnostico.Location = new Point(281, 281);
+            txtDiagnostico.Location = new Point(284, 287);
             txtDiagnostico.Multiline = true;
             txtDiagnostico.Name = "txtDiagnostico";
             txtDiagnostico.Size = new Size(254, 107);
@@ -150,7 +152,7 @@
             // 
             lblEstado.AutoSize = true;
             lblEstado.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblEstado.Location = new Point(100, 410);
+            lblEstado.Location = new Point(103, 416);
             lblEstado.Name = "lblEstado";
             lblEstado.Size = new Size(180, 25);
             lblEstado.TabIndex = 12;
@@ -160,7 +162,7 @@
             // 
             cmbEstado.FormattingEnabled = true;
             cmbEstado.Items.AddRange(new object[] { "Ingresado", "", "En Observación", "", "De Alta", "", "Hospitalizado" });
-            cmbEstado.Location = new Point(281, 415);
+            cmbEstado.Location = new Point(284, 421);
             cmbEstado.Name = "cmbEstado";
             cmbEstado.Size = new Size(254, 23);
             cmbEstado.TabIndex = 13;
@@ -169,7 +171,7 @@
             // 
             lblFechaIngreso.AutoSize = true;
             lblFechaIngreso.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblFechaIngreso.Location = new Point(100, 470);
+            lblFechaIngreso.Location = new Point(103, 476);
             lblFechaIngreso.Name = "lblFechaIngreso";
             lblFechaIngreso.Size = new Size(159, 25);
             lblFechaIngreso.TabIndex = 14;
@@ -177,7 +179,7 @@
             // 
             // dtpFechaIngreso
             // 
-            dtpFechaIngreso.Location = new Point(281, 472);
+            dtpFechaIngreso.Location = new Point(284, 478);
             dtpFechaIngreso.Name = "dtpFechaIngreso";
             dtpFechaIngreso.Size = new Size(254, 23);
             dtpFechaIngreso.TabIndex = 16;
@@ -185,7 +187,7 @@
             // btnRegistrar
             // 
             btnRegistrar.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            btnRegistrar.Location = new Point(4, 535);
+            btnRegistrar.Location = new Point(7, 541);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(203, 44);
             btnRegistrar.TabIndex = 17;
@@ -195,7 +197,7 @@
             // btnLimpiar
             // 
             btnLimpiar.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            btnLimpiar.Location = new Point(213, 535);
+            btnLimpiar.Location = new Point(216, 541);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(203, 44);
             btnLimpiar.TabIndex = 18;
@@ -205,12 +207,28 @@
             // btnVolver
             // 
             btnVolver.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            btnVolver.Location = new Point(422, 535);
+            btnVolver.Location = new Point(425, 541);
             btnVolver.Name = "btnVolver";
             btnVolver.Size = new Size(203, 44);
             btnVolver.TabIndex = 19;
             btnVolver.Text = "Volver al Menú";
             btnVolver.UseVisualStyleBackColor = true;
+            // 
+            // splitter1
+            // 
+            splitter1.Location = new Point(0, 0);
+            splitter1.Name = "splitter1";
+            splitter1.Size = new Size(3, 611);
+            splitter1.TabIndex = 20;
+            splitter1.TabStop = false;
+            // 
+            // splitter2
+            // 
+            splitter2.Location = new Point(3, 0);
+            splitter2.Name = "splitter2";
+            splitter2.Size = new Size(3, 611);
+            splitter2.TabIndex = 21;
+            splitter2.TabStop = false;
             // 
             // frmRegistrarPaciente
             // 
@@ -218,6 +236,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCyan;
             ClientSize = new Size(634, 611);
+            Controls.Add(splitter2);
+            Controls.Add(splitter1);
             Controls.Add(btnVolver);
             Controls.Add(btnLimpiar);
             Controls.Add(btnRegistrar);
@@ -237,7 +257,8 @@
             Controls.Add(lblCedula);
             Controls.Add(lblRegistroPacientes);
             Name = "frmRegistrarPaciente";
-            Text = "frmRegistrarPaciente";
+            Text = "Registrar Paciente";
+            Load += frmRegistrarPaciente_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -262,5 +283,7 @@
         private Button btnRegistrar;
         private Button btnLimpiar;
         private Button btnVolver;
+        private Splitter splitter1;
+        private Splitter splitter2;
     }
 }
