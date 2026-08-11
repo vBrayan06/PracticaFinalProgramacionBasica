@@ -89,7 +89,6 @@
             btnEliminarPaciente.TabIndex = 4;
             btnEliminarPaciente.Text = "Eliminar paciente";
             btnEliminarPaciente.UseVisualStyleBackColor = true;
-            btnEliminarPaciente.Click += btnEliminarPaciente_Click;
             // 
             // btnListarPacientes
             // 
@@ -100,6 +99,7 @@
             btnListarPacientes.TabIndex = 5;
             btnListarPacientes.Text = "Listar pacientes";
             btnListarPacientes.UseVisualStyleBackColor = true;
+            btnListarPacientes.Click += btnListarPacientes_Click;
             // 
             // btnActualizarPaciente
             // 
@@ -110,7 +110,6 @@
             btnActualizarPaciente.TabIndex = 6;
             btnActualizarPaciente.Text = "Actualizar paciente";
             btnActualizarPaciente.UseVisualStyleBackColor = true;
-            btnActualizarPaciente.Click += btnActualizarPaciente_Click;
             // 
             // btnSalir
             // 

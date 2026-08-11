@@ -57,12 +57,12 @@ namespace PracticaFinalProgramacionBasica
             Paciente nuevoPaciente = new Paciente
             {
                 Cedula = txtCedula.Text.Trim(),
-                NombreCompleto = txtNombreCompleto.Text.Trim(),
+                Nombre_Completo = txtNombreCompleto.Text.Trim(),
                 Edad = edad,
                 Sexo = (Sexo)cmbSexo.SelectedItem,
                 Diagnostico = txtDiagnostico.Text.Trim(),
                 Estado = (EstadoPaciente)cmbEstado.SelectedItem,
-                FechaIngreso = dtpFechaIngreso.Value
+                Fecha_De_Ingreso = dtpFechaIngreso.Value
             };
 
             bool registradoExitosamente = gestor.RegistrarPaciente(nuevoPaciente);

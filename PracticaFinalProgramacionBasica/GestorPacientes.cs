@@ -51,7 +51,7 @@ namespace PracticaFinalProgramacionBasica
 
             foreach (Paciente paciente in pacientes)
             {
-                if (paciente.NombreCompleto.ToLower().Contains(nombre.ToLower()))
+                if (paciente.Nombre_Completo.ToLower().Contains(nombre.ToLower()))
                 {
                     pacientesEncontrados.Add(paciente);
                 }
@@ -74,12 +74,12 @@ namespace PracticaFinalProgramacionBasica
                 return false;
             }
 
-            paciente.NombreCompleto = pacienteActualizado.NombreCompleto;
+            paciente.Nombre_Completo = pacienteActualizado.Nombre_Completo;
             paciente.Edad = pacienteActualizado.Edad;
             paciente.Sexo = pacienteActualizado.Sexo;
             paciente.Diagnostico = pacienteActualizado.Diagnostico;
             paciente.Estado = pacienteActualizado.Estado;
-            paciente.FechaIngreso = pacienteActualizado.FechaIngreso;
+            paciente.Fecha_De_Ingreso = pacienteActualizado.Fecha_De_Ingreso;
 
             return true;
         }
