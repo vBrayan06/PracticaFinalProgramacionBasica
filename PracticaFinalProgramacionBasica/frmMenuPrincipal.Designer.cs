@@ -67,6 +67,7 @@
             btnRegistrarPaciente.TabIndex = 2;
             btnRegistrarPaciente.Text = "Registrar paciente";
             btnRegistrarPaciente.UseVisualStyleBackColor = true;
+            btnRegistrarPaciente.Click += btnRegistrarPaciente_Click;
             // 
             // btnBuscarPaciente
             // 
@@ -77,6 +78,7 @@
             btnBuscarPaciente.TabIndex = 3;
             btnBuscarPaciente.Text = "Buscar paciente";
             btnBuscarPaciente.UseVisualStyleBackColor = true;
+            btnBuscarPaciente.Click += btnBuscarPaciente_Click;
             // 
             // btnEliminarPaciente
             // 
@@ -87,6 +89,7 @@
             btnEliminarPaciente.TabIndex = 4;
             btnEliminarPaciente.Text = "Eliminar paciente";
             btnEliminarPaciente.UseVisualStyleBackColor = true;
+            btnEliminarPaciente.Click += btnEliminarPaciente_Click;
             // 
             // btnListarPacientes
             // 
@@ -107,6 +110,7 @@
             btnActualizarPaciente.TabIndex = 6;
             btnActualizarPaciente.Text = "Actualizar paciente";
             btnActualizarPaciente.UseVisualStyleBackColor = true;
+            btnActualizarPaciente.Click += btnActualizarPaciente_Click;
             // 
             // btnSalir
             // 
@@ -117,6 +121,7 @@
             btnSalir.TabIndex = 7;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // frmMenuPrincipal
             // 

@@ -1,6 +1,6 @@
 ﻿namespace PracticaFinalProgramacionBasica
 {
-    partial class frmConsultarPacientes
+    partial class frmBuscarPacientes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,25 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblConsultaDePacientes = new Label();
+            lblBuscarPacientes = new Label();
             lblBuscar = new Label();
-            txtBuscar = new TextBox();
-            btnBuscar = new Button();
             btnMostrarTodos = new Button();
             dgvPacientes = new DataGridView();
             btnVolver = new Button();
+            btnBuscar = new Button();
+            txtBuscar = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvPacientes).BeginInit();
             SuspendLayout();
             // 
-            // lblConsultaDePacientes
+            // lblBuscarPacientes
             // 
-            lblConsultaDePacientes.AutoSize = true;
-            lblConsultaDePacientes.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblConsultaDePacientes.Location = new Point(344, 29);
-            lblConsultaDePacientes.Name = "lblConsultaDePacientes";
-            lblConsultaDePacientes.Size = new Size(296, 37);
-            lblConsultaDePacientes.TabIndex = 1;
-            lblConsultaDePacientes.Text = "Consulta de Pacientes";
+            lblBuscarPacientes.AutoSize = true;
+            lblBuscarPacientes.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBuscarPacientes.Location = new Point(365, 30);
+            lblBuscarPacientes.Name = "lblBuscarPacientes";
+            lblBuscarPacientes.Size = new Size(229, 37);
+            lblBuscarPacientes.TabIndex = 1;
+            lblBuscarPacientes.Text = "Buscar Pacientes";
+            lblBuscarPacientes.Click += lblConsultaDePacientes_Click;
             // 
             // lblBuscar
             // 
@@ -58,22 +59,6 @@
             lblBuscar.TabIndex = 2;
             lblBuscar.Text = "Buscar por Cédula o Nombre:";
             // 
-            // txtBuscar
-            // 
-            txtBuscar.Location = new Point(197, 168);
-            txtBuscar.Name = "txtBuscar";
-            txtBuscar.Size = new Size(286, 23);
-            txtBuscar.TabIndex = 3;
-            // 
-            // btnBuscar
-            // 
-            btnBuscar.Location = new Point(489, 166);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(133, 27);
-            btnBuscar.TabIndex = 4;
-            btnBuscar.Text = "Buscar";
-            btnBuscar.UseVisualStyleBackColor = true;
-            // 
             // btnMostrarTodos
             // 
             btnMostrarTodos.Location = new Point(628, 166);
@@ -82,6 +67,7 @@
             btnMostrarTodos.TabIndex = 5;
             btnMostrarTodos.Text = "Mostrar Todos";
             btnMostrarTodos.UseVisualStyleBackColor = true;
+            btnMostrarTodos.Click += btnMostrarTodos_Click;
             // 
             // dgvPacientes
             // 
@@ -91,6 +77,7 @@
             dgvPacientes.Name = "dgvPacientes";
             dgvPacientes.Size = new Size(786, 150);
             dgvPacientes.TabIndex = 6;
+            dgvPacientes.CellContentClick += dgvPacientes_CellContentClick;
             // 
             // btnVolver
             // 
@@ -101,8 +88,27 @@
             btnVolver.TabIndex = 7;
             btnVolver.Text = "Volver al menú";
             btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.Click += btnVolver_Click;
             // 
-            // frmConsultarPacientes
+            // btnBuscar
+            // 
+            btnBuscar.Location = new Point(489, 166);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(133, 27);
+            btnBuscar.TabIndex = 4;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
+            // 
+            // txtBuscar
+            // 
+            txtBuscar.Location = new Point(197, 168);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.Size = new Size(286, 23);
+            txtBuscar.TabIndex = 3;
+            txtBuscar.TextChanged += txtBuscar_TextChanged;
+            // 
+            // frmBuscarPacientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -114,9 +120,9 @@
             Controls.Add(btnBuscar);
             Controls.Add(txtBuscar);
             Controls.Add(lblBuscar);
-            Controls.Add(lblConsultaDePacientes);
-            Name = "frmConsultarPacientes";
-            Text = "Consulta de Pacientes";
+            Controls.Add(lblBuscarPacientes);
+            Name = "frmBuscarPacientes";
+            Text = "Buscar Pacientes";
             ((System.ComponentModel.ISupportInitialize)dgvPacientes).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -124,12 +130,12 @@
 
         #endregion
 
-        private Label lblConsultaDePacientes;
+        private Label lblBuscarPacientes;
         private Label lblBuscar;
-        private TextBox txtBuscar;
-        private Button btnBuscar;
         private Button btnMostrarTodos;
         private DataGridView dgvPacientes;
         private Button btnVolver;
+        private Button btnBuscar;
+        private TextBox txtBuscar;
     }
 }

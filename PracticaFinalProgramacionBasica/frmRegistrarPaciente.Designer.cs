@@ -31,9 +31,9 @@
             lblRegistroPacientes = new Label();
             lblCedula = new Label();
             txtCedula = new TextBox();
-            textBox1 = new TextBox();
+            txtNombreCompleto = new TextBox();
             lblNombre = new Label();
-            textBox2 = new TextBox();
+            txtEdad = new TextBox();
             lblEdad = new Label();
             lblSexo = new Label();
             cmbSexo = new ComboBox();
@@ -76,13 +76,15 @@
             txtCedula.Name = "txtCedula";
             txtCedula.Size = new Size(254, 23);
             txtCedula.TabIndex = 3;
+            txtCedula.TextChanged += txtCedula_TextChanged;
             // 
-            // textBox1
+            // txtNombreCompleto
             // 
-            textBox1.Location = new Point(284, 140);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(254, 23);
-            textBox1.TabIndex = 5;
+            txtNombreCompleto.Location = new Point(284, 140);
+            txtNombreCompleto.Name = "txtNombreCompleto";
+            txtNombreCompleto.Size = new Size(254, 23);
+            txtNombreCompleto.TabIndex = 5;
+            txtNombreCompleto.TextChanged += textBox1_TextChanged;
             // 
             // lblNombre
             // 
@@ -94,12 +96,13 @@
             lblNombre.TabIndex = 4;
             lblNombre.Text = "Nombre Completo:";
             // 
-            // textBox2
+            // txtEdad
             // 
-            textBox2.Location = new Point(284, 186);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(254, 23);
-            textBox2.TabIndex = 7;
+            txtEdad.Location = new Point(284, 186);
+            txtEdad.Name = "txtEdad";
+            txtEdad.Size = new Size(254, 23);
+            txtEdad.TabIndex = 7;
+            txtEdad.TextChanged += textBox2_TextChanged;
             // 
             // lblEdad
             // 
@@ -129,6 +132,7 @@
             cmbSexo.Name = "cmbSexo";
             cmbSexo.Size = new Size(254, 23);
             cmbSexo.TabIndex = 9;
+            cmbSexo.SelectedIndexChanged += cmbSexo_SelectedIndexChanged;
             // 
             // lblDiagnostico
             // 
@@ -147,6 +151,7 @@
             txtDiagnostico.Name = "txtDiagnostico";
             txtDiagnostico.Size = new Size(254, 107);
             txtDiagnostico.TabIndex = 11;
+            txtDiagnostico.TextChanged += txtDiagnostico_TextChanged;
             // 
             // lblEstado
             // 
@@ -166,6 +171,7 @@
             cmbEstado.Name = "cmbEstado";
             cmbEstado.Size = new Size(254, 23);
             cmbEstado.TabIndex = 13;
+            cmbEstado.SelectedIndexChanged += cmbEstado_SelectedIndexChanged;
             // 
             // lblFechaIngreso
             // 
@@ -183,6 +189,7 @@
             dtpFechaIngreso.Name = "dtpFechaIngreso";
             dtpFechaIngreso.Size = new Size(254, 23);
             dtpFechaIngreso.TabIndex = 16;
+            dtpFechaIngreso.ValueChanged += dtpFechaIngreso_ValueChanged;
             // 
             // btnRegistrar
             // 
@@ -193,6 +200,7 @@
             btnRegistrar.TabIndex = 17;
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
             // btnLimpiar
             // 
@@ -203,6 +211,7 @@
             btnLimpiar.TabIndex = 18;
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // btnVolver
             // 
@@ -213,6 +222,7 @@
             btnVolver.TabIndex = 19;
             btnVolver.Text = "Volver al Menú";
             btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.Click += btnVolver_Click;
             // 
             // splitter1
             // 
@@ -249,9 +259,9 @@
             Controls.Add(lblDiagnostico);
             Controls.Add(cmbSexo);
             Controls.Add(lblSexo);
-            Controls.Add(textBox2);
+            Controls.Add(txtEdad);
             Controls.Add(lblEdad);
-            Controls.Add(textBox1);
+            Controls.Add(txtNombreCompleto);
             Controls.Add(lblNombre);
             Controls.Add(txtCedula);
             Controls.Add(lblCedula);
@@ -268,9 +278,9 @@
         private Label lblRegistroPacientes;
         private Label lblCedula;
         private TextBox txtCedula;
-        private TextBox textBox1;
+        private TextBox txtNombreCompleto;
         private Label lblNombre;
-        private TextBox textBox2;
+        private TextBox txtEdad;
         private Label lblEdad;
         private Label lblSexo;
         private ComboBox cmbSexo;

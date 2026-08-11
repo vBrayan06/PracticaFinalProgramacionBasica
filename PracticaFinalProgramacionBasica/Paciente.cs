@@ -12,7 +12,7 @@ namespace PracticaFinalProgramacionBasica
         Femenino
     }
 
-    public enum EstadoPciente
+    public enum EstadoPaciente
     {
         Ingresado,
         EnObservacion,
@@ -20,14 +20,14 @@ namespace PracticaFinalProgramacionBasica
         Hospitalizado
     }
 
-    internal class Paciente
+    public class Paciente
     {
         public string Cedula { get; set; }
         public string NombreCompleto { get; set; }
         public int Edad { get; set; }
         public Sexo Sexo { get; set; }
         public string Diagnostico { get; set; }
-        public EstadoPciente Estado { get; set; }
+        public EstadoPaciente Estado { get; set; }
         public DateTime FechaIngreso { get; set; }
     }
 }

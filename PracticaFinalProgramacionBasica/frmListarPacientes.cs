@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace PracticaFinalProgramacionBasica
 {
-    public partial class frmConsultarPacientes : Form
+    public partial class frmListarPacientes : Form
     {
-        public frmConsultarPacientes()
+        public frmListarPacientes()
         {
             InitializeComponent();
         }

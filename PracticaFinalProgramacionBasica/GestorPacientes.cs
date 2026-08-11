@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PracticaFinalProgramacionBasica
 {
-    internal class GestorPacientes
+    public class GestorPacientes
     {
         private List<Paciente> pacientes = new List<Paciente>();
 
