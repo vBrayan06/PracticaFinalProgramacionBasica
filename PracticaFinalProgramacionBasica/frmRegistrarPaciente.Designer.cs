@@ -1,0 +1,266 @@
+﻿namespace PracticaFinalProgramacionBasica
+{
+    partial class frmRegistrarPaciente
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            lblRegistroPacientes = new Label();
+            lblCedula = new Label();
+            txtCedula = new TextBox();
+            textBox1 = new TextBox();
+            lblNombre = new Label();
+            textBox2 = new TextBox();
+            lblEdad = new Label();
+            lblSexo = new Label();
+            cmbSexo = new ComboBox();
+            lblDiagnostico = new Label();
+            txtDiagnostico = new TextBox();
+            lblEstado = new Label();
+            cmbEstado = new ComboBox();
+            lblFechaIngreso = new Label();
+            dtpFechaIngreso = new DateTimePicker();
+            btnRegistrar = new Button();
+            btnLimpiar = new Button();
+            btnVolver = new Button();
+            SuspendLayout();
+            // 
+            // lblRegistroPacientes
+            // 
+            lblRegistroPacientes.AutoSize = true;
+            lblRegistroPacientes.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblRegistroPacientes.Location = new Point(171, 20);
+            lblRegistroPacientes.Name = "lblRegistroPacientes";
+            lblRegistroPacientes.Size = new Size(292, 37);
+            lblRegistroPacientes.TabIndex = 1;
+            lblRegistroPacientes.Text = "Registro de Pacientes";
+            // 
+            // lblCedula
+            // 
+            lblCedula.AutoSize = true;
+            lblCedula.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCedula.Location = new Point(100, 80);
+            lblCedula.Name = "lblCedula";
+            lblCedula.Size = new Size(75, 25);
+            lblCedula.TabIndex = 2;
+            lblCedula.Text = "Cédula:";
+            // 
+            // txtCedula
+            // 
+            txtCedula.Location = new Point(281, 85);
+            txtCedula.Name = "txtCedula";
+            txtCedula.Size = new Size(254, 23);
+            txtCedula.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(281, 134);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(254, 23);
+            textBox1.TabIndex = 5;
+            // 
+            // lblNombre
+            // 
+            lblNombre.AutoSize = true;
+            lblNombre.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNombre.Location = new Point(100, 129);
+            lblNombre.Name = "lblNombre";
+            lblNombre.Size = new Size(172, 25);
+            lblNombre.TabIndex = 4;
+            lblNombre.Text = "Nombre Completo:";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(281, 180);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(254, 23);
+            textBox2.TabIndex = 7;
+            // 
+            // lblEdad
+            // 
+            lblEdad.AutoSize = true;
+            lblEdad.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblEdad.Location = new Point(100, 178);
+            lblEdad.Name = "lblEdad";
+            lblEdad.Size = new Size(58, 25);
+            lblEdad.TabIndex = 6;
+            lblEdad.Text = "Edad:";
+            // 
+            // lblSexo
+            // 
+            lblSexo.AutoSize = true;
+            lblSexo.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblSexo.Location = new Point(100, 227);
+            lblSexo.Name = "lblSexo";
+            lblSexo.Size = new Size(56, 25);
+            lblSexo.TabIndex = 8;
+            lblSexo.Text = "Sexo:";
+            // 
+            // cmbSexo
+            // 
+            cmbSexo.FormattingEnabled = true;
+            cmbSexo.Items.AddRange(new object[] { "Masculino", "Femenino" });
+            cmbSexo.Location = new Point(281, 229);
+            cmbSexo.Name = "cmbSexo";
+            cmbSexo.Size = new Size(254, 23);
+            cmbSexo.TabIndex = 9;
+            // 
+            // lblDiagnostico
+            // 
+            lblDiagnostico.AutoSize = true;
+            lblDiagnostico.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblDiagnostico.Location = new Point(100, 276);
+            lblDiagnostico.Name = "lblDiagnostico";
+            lblDiagnostico.Size = new Size(116, 25);
+            lblDiagnostico.TabIndex = 10;
+            lblDiagnostico.Text = "Diagnóstico:";
+            // 
+            // txtDiagnostico
+            // 
+            txtDiagnostico.Location = new Point(281, 281);
+            txtDiagnostico.Multiline = true;
+            txtDiagnostico.Name = "txtDiagnostico";
+            txtDiagnostico.Size = new Size(254, 107);
+            txtDiagnostico.TabIndex = 11;
+            // 
+            // lblEstado
+            // 
+            lblEstado.AutoSize = true;
+            lblEstado.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblEstado.Location = new Point(100, 410);
+            lblEstado.Name = "lblEstado";
+            lblEstado.Size = new Size(180, 25);
+            lblEstado.TabIndex = 12;
+            lblEstado.Text = "Estado del paciente:";
+            // 
+            // cmbEstado
+            // 
+            cmbEstado.FormattingEnabled = true;
+            cmbEstado.Items.AddRange(new object[] { "Ingresado", "", "En Observación", "", "De Alta", "", "Hospitalizado" });
+            cmbEstado.Location = new Point(281, 415);
+            cmbEstado.Name = "cmbEstado";
+            cmbEstado.Size = new Size(254, 23);
+            cmbEstado.TabIndex = 13;
+            // 
+            // lblFechaIngreso
+            // 
+            lblFechaIngreso.AutoSize = true;
+            lblFechaIngreso.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblFechaIngreso.Location = new Point(100, 470);
+            lblFechaIngreso.Name = "lblFechaIngreso";
+            lblFechaIngreso.Size = new Size(159, 25);
+            lblFechaIngreso.TabIndex = 14;
+            lblFechaIngreso.Text = "Fecha de ingreso:";
+            // 
+            // dtpFechaIngreso
+            // 
+            dtpFechaIngreso.Location = new Point(281, 472);
+            dtpFechaIngreso.Name = "dtpFechaIngreso";
+            dtpFechaIngreso.Size = new Size(254, 23);
+            dtpFechaIngreso.TabIndex = 16;
+            // 
+            // btnRegistrar
+            // 
+            btnRegistrar.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            btnRegistrar.Location = new Point(4, 535);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(203, 44);
+            btnRegistrar.TabIndex = 17;
+            btnRegistrar.Text = "Registrar";
+            btnRegistrar.UseVisualStyleBackColor = true;
+            // 
+            // btnLimpiar
+            // 
+            btnLimpiar.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            btnLimpiar.Location = new Point(213, 535);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(203, 44);
+            btnLimpiar.TabIndex = 18;
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.UseVisualStyleBackColor = true;
+            // 
+            // btnVolver
+            // 
+            btnVolver.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            btnVolver.Location = new Point(422, 535);
+            btnVolver.Name = "btnVolver";
+            btnVolver.Size = new Size(203, 44);
+            btnVolver.TabIndex = 19;
+            btnVolver.Text = "Volver al Menú";
+            btnVolver.UseVisualStyleBackColor = true;
+            // 
+            // frmRegistrarPaciente
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightCyan;
+            ClientSize = new Size(634, 611);
+            Controls.Add(btnVolver);
+            Controls.Add(btnLimpiar);
+            Controls.Add(btnRegistrar);
+            Controls.Add(dtpFechaIngreso);
+            Controls.Add(lblFechaIngreso);
+            Controls.Add(cmbEstado);
+            Controls.Add(lblEstado);
+            Controls.Add(txtDiagnostico);
+            Controls.Add(lblDiagnostico);
+            Controls.Add(cmbSexo);
+            Controls.Add(lblSexo);
+            Controls.Add(textBox2);
+            Controls.Add(lblEdad);
+            Controls.Add(textBox1);
+            Controls.Add(lblNombre);
+            Controls.Add(txtCedula);
+            Controls.Add(lblCedula);
+            Controls.Add(lblRegistroPacientes);
+            Name = "frmRegistrarPaciente";
+            Text = "frmRegistrarPaciente";
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label lblRegistroPacientes;
+        private Label lblCedula;
+        private TextBox txtCedula;
+        private TextBox textBox1;
+        private Label lblNombre;
+        private TextBox textBox2;
+        private Label lblEdad;
+        private Label lblSexo;
+        private ComboBox cmbSexo;
+        private Label lblDiagnostico;
+        private TextBox txtDiagnostico;
+        private Label lblEstado;
+        private ComboBox cmbEstado;
+        private Label lblFechaIngreso;
+        private DateTimePicker dtpFechaIngreso;
+        private Button btnRegistrar;
+        private Button btnLimpiar;
+        private Button btnVolver;
+    }
+}
