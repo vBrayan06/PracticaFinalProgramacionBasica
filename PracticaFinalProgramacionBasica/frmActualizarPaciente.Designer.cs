@@ -68,6 +68,7 @@
             btnVolver.TabIndex = 34;
             btnVolver.Text = "Volver al Menú";
             btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.Click += btnVolver_Click;
             // 
             // btnActualizar
             // 
@@ -78,13 +79,15 @@
             btnActualizar.TabIndex = 32;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // dtpFechaIngreso
             // 
-            dtpFechaIngreso.Location = new Point(284, 581);
+            dtpFechaIngreso.Location = new Point(268, 581);
             dtpFechaIngreso.Name = "dtpFechaIngreso";
             dtpFechaIngreso.Size = new Size(254, 23);
             dtpFechaIngreso.TabIndex = 31;
+            dtpFechaIngreso.ValueChanged += dtpFechaIngreso_ValueChanged;
             // 
             // lblFechaIngreso
             // 
@@ -104,6 +107,7 @@
             cmbEstado.Name = "cmbEstado";
             cmbEstado.Size = new Size(254, 23);
             cmbEstado.TabIndex = 29;
+            cmbEstado.SelectedIndexChanged += cmbEstado_SelectedIndexChanged;
             // 
             // lblEstado
             // 
@@ -122,6 +126,7 @@
             txtDiagnostico.Name = "txtDiagnostico";
             txtDiagnostico.Size = new Size(254, 107);
             txtDiagnostico.TabIndex = 27;
+            txtDiagnostico.TextChanged += txtDiagnostico_TextChanged;
             // 
             // lblDiagnostico
             // 
@@ -141,6 +146,7 @@
             cmbSexo.Name = "cmbSexo";
             cmbSexo.Size = new Size(254, 23);
             cmbSexo.TabIndex = 25;
+            cmbSexo.SelectedIndexChanged += cmbSexo_SelectedIndexChanged;
             // 
             // lblSexo
             // 
@@ -158,6 +164,7 @@
             txtEdad.Name = "txtEdad";
             txtEdad.Size = new Size(254, 23);
             txtEdad.TabIndex = 23;
+            txtEdad.TextChanged += txtEdad_TextChanged;
             // 
             // lblEdad
             // 
@@ -175,6 +182,7 @@
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(254, 23);
             txtNombre.TabIndex = 21;
+            txtNombre.TextChanged += txtNombre_TextChanged;
             // 
             // lblNombre
             // 
@@ -192,6 +200,7 @@
             txtCedula.Name = "txtCedula";
             txtCedula.Size = new Size(155, 23);
             txtCedula.TabIndex = 36;
+            txtCedula.TextChanged += txtCedula_TextChanged;
             // 
             // lblCedula
             // 
@@ -211,6 +220,7 @@
             btnBuscar.TabIndex = 37;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // lblLinea
             // 

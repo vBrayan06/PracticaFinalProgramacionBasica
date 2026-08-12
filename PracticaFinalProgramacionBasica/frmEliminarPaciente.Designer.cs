@@ -54,6 +54,7 @@
             btnBuscar.TabIndex = 41;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // txtCedula
             // 
@@ -61,6 +62,7 @@
             txtCedula.Name = "txtCedula";
             txtCedula.Size = new Size(155, 23);
             txtCedula.TabIndex = 40;
+            txtCedula.TextChanged += txtCedula_TextChanged;
             // 
             // lblCedula
             // 
@@ -142,6 +144,7 @@
             lblEstadoInfo.TabIndex = 51;
             lblEstadoInfo.Text = "Estado del paciente:";
             lblEstadoInfo.Visible = false;
+            lblEstadoInfo.Click += lblEstadoInfo_Click;
             // 
             // lblDiagnosticoInfo
             // 
@@ -153,6 +156,7 @@
             lblDiagnosticoInfo.TabIndex = 50;
             lblDiagnosticoInfo.Text = "Diagnóstico:";
             lblDiagnosticoInfo.Visible = false;
+            lblDiagnosticoInfo.Click += lblDiagnosticoInfo_Click;
             // 
             // lblSexoInfo
             // 
@@ -164,6 +168,7 @@
             lblSexoInfo.TabIndex = 49;
             lblSexoInfo.Text = "Sexo:";
             lblSexoInfo.Visible = false;
+            lblSexoInfo.Click += lblSexoInfo_Click;
             // 
             // lblEdadInfo
             // 
@@ -175,6 +180,7 @@
             lblEdadInfo.TabIndex = 48;
             lblEdadInfo.Text = "Edad:";
             lblEdadInfo.Visible = false;
+            lblEdadInfo.Click += lblEdadInfo_Click;
             // 
             // lblNombreInfo
             // 
@@ -186,6 +192,7 @@
             lblNombreInfo.TabIndex = 47;
             lblNombreInfo.Text = "Nombre:";
             lblNombreInfo.Visible = false;
+            lblNombreInfo.Click += lblNombreInfo_Click;
             // 
             // btnVolver
             // 
@@ -196,6 +203,7 @@
             btnVolver.TabIndex = 53;
             btnVolver.Text = "Volver al Menú";
             btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.Click += btnVolver_Click_1;
             // 
             // btnEliminar
             // 
@@ -206,6 +214,7 @@
             btnEliminar.TabIndex = 52;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // frmEliminarPaciente
             // 

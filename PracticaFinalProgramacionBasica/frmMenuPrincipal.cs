@@ -24,17 +24,27 @@ namespace PracticaFinalProgramacionBasica
             ventanaConsultar.ShowDialog();
         }
 
+        private void btnListarPacientes_Click(object sender, EventArgs e)
+        {
+            frmListarPacientes ventanaConsultar = new frmListarPacientes(gestorCompartido);
+            ventanaConsultar.ShowDialog();
+        }
 
+        private void btnActualizarPaciente_Click(object sender, EventArgs e)
+        {
+            frmActualizarPaciente ventanaActualizar = new frmActualizarPaciente(gestorCompartido);
+            ventanaActualizar.ShowDialog();
+        }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void btnListarPacientes_Click(object sender, EventArgs e)
+        private void btnEliminarPaciente_Click_1(object sender, EventArgs e)
         {
-            frmListarPacientes ventanaConsultar = new frmListarPacientes(gestorCompartido);
-            ventanaConsultar.ShowDialog();
+            frmEliminarPaciente ventanaEliminar = new frmEliminarPaciente(gestorCompartido);
+            ventanaEliminar.ShowDialog();
         }
     }
 }
