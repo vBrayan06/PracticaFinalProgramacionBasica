@@ -88,7 +88,7 @@ El proyecto está dividido principalmente en:
 
 ## Capturas de pantalla
 
-En esta sección se deben colocar las capturas del programa funcionando.
+En esta sección están las capturas del programa funcionando.
 
 ### Menú principal
 
