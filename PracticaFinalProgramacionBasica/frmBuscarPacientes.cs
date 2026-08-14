@@ -21,16 +21,6 @@ namespace PracticaFinalProgramacionBasica
             dgvPacientes.DataSource = lista;
         }
 
-        private void txtBuscar_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvPacientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             string termino = txtBuscar.Text.Trim();
@@ -74,11 +64,6 @@ namespace PracticaFinalProgramacionBasica
         private void btnVolver_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void lblConsultaDePacientes_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -27,16 +27,6 @@ namespace PracticaFinalProgramacionBasica
             cmbEstado.Items.Add(EstadoPaciente.Hospitalizado);
             cmbEstado.SelectedIndex = 0;
         }
-
-     
-        private void txtCedula_TextChanged(object sender, EventArgs e) { }
-        private void textBox1_TextChanged(object sender, EventArgs e) { }
-        private void textBox2_TextChanged(object sender, EventArgs e) { }
-        private void cmbSexo_SelectedIndexChanged(object sender, EventArgs e) { }
-        private void txtDiagnostico_TextChanged(object sender, EventArgs e) { }
-        private void cmbEstado_SelectedIndexChanged(object sender, EventArgs e) { }
-        private void dtpFechaIngreso_ValueChanged(object sender, EventArgs e) { }
-
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtCedula.Text) ||

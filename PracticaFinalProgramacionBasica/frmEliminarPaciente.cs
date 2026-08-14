@@ -13,9 +13,6 @@ namespace PracticaFinalProgramacionBasica
             gestor = gestorCompartido;
         }
 
-        private void frmEliminarPaciente_Load(object sender, EventArgs e) { }
-        private void txtCedula_TextChanged(object sender, EventArgs e) { }
-
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtCedula.Text))
@@ -129,12 +126,6 @@ namespace PracticaFinalProgramacionBasica
             lblDiagnosticoInfo.Visible = false;
             lblEstadoInfo.Visible = false;
         }
-
-        private void lblNombreInfo_Click(object sender, EventArgs e) { }
-        private void lblEdadInfo_Click(object sender, EventArgs e) { }
-        private void lblSexoInfo_Click(object sender, EventArgs e) { }
-        private void lblDiagnosticoInfo_Click(object sender, EventArgs e) { }
-        private void lblEstadoInfo_Click(object sender, EventArgs e) { }
 
         private void btnVolver_Click_1(object sender, EventArgs e)
         {

@@ -47,7 +47,6 @@
             lblBuscarPacientes.Size = new Size(229, 37);
             lblBuscarPacientes.TabIndex = 1;
             lblBuscarPacientes.Text = "Buscar Pacientes";
-            lblBuscarPacientes.Click += lblConsultaDePacientes_Click;
             // 
             // lblBuscar
             // 
@@ -77,7 +76,6 @@
             dgvPacientes.Name = "dgvPacientes";
             dgvPacientes.Size = new Size(786, 150);
             dgvPacientes.TabIndex = 6;
-            dgvPacientes.CellContentClick += dgvPacientes_CellContentClick;
             // 
             // btnVolver
             // 
@@ -106,7 +104,6 @@
             txtBuscar.Name = "txtBuscar";
             txtBuscar.Size = new Size(286, 23);
             txtBuscar.TabIndex = 3;
-            txtBuscar.TextChanged += txtBuscar_TextChanged;
             // 
             // frmBuscarPacientes
             // 

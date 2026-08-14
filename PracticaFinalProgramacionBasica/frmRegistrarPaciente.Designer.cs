@@ -76,7 +76,6 @@
             txtCedula.Name = "txtCedula";
             txtCedula.Size = new Size(254, 23);
             txtCedula.TabIndex = 3;
-            txtCedula.TextChanged += txtCedula_TextChanged;
             // 
             // txtNombreCompleto
             // 
@@ -84,7 +83,6 @@
             txtNombreCompleto.Name = "txtNombreCompleto";
             txtNombreCompleto.Size = new Size(254, 23);
             txtNombreCompleto.TabIndex = 5;
-            txtNombreCompleto.TextChanged += textBox1_TextChanged;
             // 
             // lblNombre
             // 
@@ -102,7 +100,6 @@
             txtEdad.Name = "txtEdad";
             txtEdad.Size = new Size(254, 23);
             txtEdad.TabIndex = 7;
-            txtEdad.TextChanged += textBox2_TextChanged;
             // 
             // lblEdad
             // 
@@ -132,7 +129,6 @@
             cmbSexo.Name = "cmbSexo";
             cmbSexo.Size = new Size(254, 23);
             cmbSexo.TabIndex = 9;
-            cmbSexo.SelectedIndexChanged += cmbSexo_SelectedIndexChanged;
             // 
             // lblDiagnostico
             // 
@@ -151,7 +147,6 @@
             txtDiagnostico.Name = "txtDiagnostico";
             txtDiagnostico.Size = new Size(254, 107);
             txtDiagnostico.TabIndex = 11;
-            txtDiagnostico.TextChanged += txtDiagnostico_TextChanged;
             // 
             // lblEstado
             // 
@@ -171,7 +166,6 @@
             cmbEstado.Name = "cmbEstado";
             cmbEstado.Size = new Size(254, 23);
             cmbEstado.TabIndex = 13;
-            cmbEstado.SelectedIndexChanged += cmbEstado_SelectedIndexChanged;
             // 
             // lblFechaIngreso
             // 
@@ -189,7 +183,6 @@
             dtpFechaIngreso.Name = "dtpFechaIngreso";
             dtpFechaIngreso.Size = new Size(254, 23);
             dtpFechaIngreso.TabIndex = 16;
-            dtpFechaIngreso.ValueChanged += dtpFechaIngreso_ValueChanged;
             // 
             // btnRegistrar
             // 
