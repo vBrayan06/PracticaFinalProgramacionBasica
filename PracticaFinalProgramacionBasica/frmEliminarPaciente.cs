@@ -5,12 +5,17 @@ namespace PracticaFinalProgramacionBasica
 {
     public partial class frmEliminarPaciente : Form
     {
+        // Usamos el gestor compartido para buscar y eliminar
+        // dentro de la misma lista de pacientes.
         private GestorPacientes gestor;
 
         public frmEliminarPaciente(GestorPacientes gestorCompartido)
         {
             InitializeComponent();
             gestor = gestorCompartido;
+
+            // El botón empieza deshabilitado porque primero
+            // hay que encontrar al paciente.
             btnEliminar.Enabled = false;
         }
 
@@ -24,10 +29,13 @@ namespace PracticaFinalProgramacionBasica
 
             try
             {
+                // Buscamos el paciente por la cédula escrita.
                 Paciente pacienteEncontrado = gestor.BuscarPorID(txtCedula.Text.Trim());
 
                 if (pacienteEncontrado != null)
                 {
+                    // Mostramos algunos datos para que el usuario pueda
+                    // comprobar que encontró a la persona correcta.
                     lblNombreInfo.Text = pacienteEncontrado.Nombre_Completo;
                     lblEdadInfo.Text = pacienteEncontrado.Edad.ToString();
                     lblSexoInfo.Text = pacienteEncontrado.Sexo.ToString();
@@ -39,6 +47,9 @@ namespace PracticaFinalProgramacionBasica
                     lblSexoInfo.Visible = true;
                     lblDiagnosticoInfo.Visible = true;
                     lblEstadoInfo.Visible = true;
+
+                    // Bloqueamos la cédula y habilitamos Eliminar
+                    // solamente después de encontrar un paciente.
                     txtCedula.ReadOnly = true;
                     btnEliminar.Enabled = true;
                 }
@@ -64,6 +75,8 @@ namespace PracticaFinalProgramacionBasica
 
             try
             {
+                // Volvemos a buscar al paciente antes de eliminar
+                // para estar seguros de que todavía existe.
                 Paciente pacienteAEliminar = gestor.BuscarPorID(txtCedula.Text.Trim());
 
                 if (pacienteAEliminar == null)
@@ -72,6 +85,7 @@ namespace PracticaFinalProgramacionBasica
                     return;
                 }
 
+                // Antes de borrar definitivamente pedimos una confirmación.
                 DialogResult confirmacion = MessageBox.Show(
                     $"¿Estás TOTALMENTE SEGURO de que deseas eliminar al paciente {pacienteAEliminar.Nombre_Completo} del sistema?\n\nEsta acción no se puede deshacer.",
                     "Confirmar Eliminación",
@@ -85,6 +99,7 @@ namespace PracticaFinalProgramacionBasica
 
                     if (exito)
                     {
+                        // Después de eliminar preguntamos si quiere repetir la operación.
                         DialogResult respuesta = MessageBox.Show(
                             "¡El paciente fue eliminado exitosamente!\n\n¿Deseas eliminar a otro paciente?",
                             "Éxito",
@@ -108,6 +123,7 @@ namespace PracticaFinalProgramacionBasica
                 }
                 else
                 {
+                    // Si decide no eliminar, limpiamos todo y puede buscar otra persona.
                     LimpiarDatos();
                 }
             }
@@ -117,6 +133,8 @@ namespace PracticaFinalProgramacionBasica
             }
         }
 
+        // Limpia la información mostrada y deja nuevamente
+        // el formulario listo para buscar otra cédula.
         private void LimpiarDatos()
         {
             txtCedula.ReadOnly = false;
@@ -133,7 +151,9 @@ namespace PracticaFinalProgramacionBasica
             lblSexoInfo.Visible = false;
             lblDiagnosticoInfo.Visible = false;
             lblEstadoInfo.Visible = false;
+
             btnEliminar.Enabled = false;
+
             txtCedula.Focus();
         }
 
