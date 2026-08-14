@@ -92,31 +92,42 @@ En esta sección se deben colocar las capturas del programa funcionando.
 
 ### Menú principal
 
-**[captura del menú principal]**
+<img width="738" height="537" alt="image" src="https://github.com/user-attachments/assets/aa48b2ab-a96a-4830-aa5d-e106323abec4" />
 
 ### Registro de paciente
 
-**[captura registrando un paciente]**
+<img width="680" height="674" alt="image" src="https://github.com/user-attachments/assets/39d02d96-002c-4497-a608-56c9cbbd3e47" />
+<img width="628" height="637" alt="image" src="https://github.com/user-attachments/assets/0a5efb87-73e0-43b8-a40e-0bf9fc3a4efc" />
+<img width="636" height="638" alt="image" src="https://github.com/user-attachments/assets/f2620d41-caca-4c99-9cb5-527acb8a6c71" />
+
+
 
 ### Listado de pacientes
 
-**[captura de la lista de pacientes]**
+<img width="994" height="771" alt="image" src="https://github.com/user-attachments/assets/f82ac9aa-e9f4-4983-9b34-3c2c500176e2" />
+
 
 ### Búsqueda de paciente
 
-**[captura de una búsqueda por cédula o nombre]**
+<img width="1030" height="617" alt="image" src="https://github.com/user-attachments/assets/9e2fddef-4b06-426b-98b2-c43f35da08a8" />
+<img width="1032" height="607" alt="image" src="https://github.com/user-attachments/assets/7eea7002-1242-44d9-80bf-7c734f31d586" />
+<img width="1009" height="628" alt="image" src="https://github.com/user-attachments/assets/fa7a512f-5aa1-4020-878a-7c04d884e642" />
+
 
 ### Actualización de paciente
 
-**[captura actualizando los datos de un paciente]**
+<img width="669" height="806" alt="image" src="https://github.com/user-attachments/assets/25e8b5f3-13aa-4ba1-a389-c4e1b767531a" />
+<img width="638" height="765" alt="image" src="https://github.com/user-attachments/assets/944029a5-80bc-4a3b-81d7-ad122123b0a4" />
+<img width="688" height="793" alt="image" src="https://github.com/user-attachments/assets/2d6d0acc-095c-41da-848f-178008838401" />
+<img width="668" height="779" alt="image" src="https://github.com/user-attachments/assets/ee8add41-d11d-4a46-9d99-17c37167b07d" />
+<img width="1029" height="794" alt="image" src="https://github.com/user-attachments/assets/eaa1db00-3de0-4718-ba83-956ffce6ad93" />
 
 ### Eliminación de paciente
 
-**[captura de la eliminación y su mensaje de confirmación]**
+<img width="690" height="614" alt="image" src="https://github.com/user-attachments/assets/e975ada3-1681-4be1-a768-6dcfe483c7f7" />
+<img width="694" height="619" alt="image" src="https://github.com/user-attachments/assets/82103be0-a1e7-4117-aeed-1e0e914473fd" />
+<img width="1009" height="797" alt="image" src="https://github.com/user-attachments/assets/e7a06930-a0f7-487d-91dd-c7281757bf40" />
 
-### Validaciones
-
-**[una o varias capturas mostrando mensajes de error o advertencia]**
 
 ## Tecnologías utilizadas
 
