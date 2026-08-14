@@ -1,7 +1,4 @@
-﻿using Microsoft.VisualBasic.Logging;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 
 namespace PracticaFinalProgramacionBasica
 {

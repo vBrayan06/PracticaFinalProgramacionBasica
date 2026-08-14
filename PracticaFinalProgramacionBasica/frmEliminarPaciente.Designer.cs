@@ -197,7 +197,7 @@
             btnVolver.TabIndex = 53;
             btnVolver.Text = "Volver al Menú";
             btnVolver.UseVisualStyleBackColor = true;
-            btnVolver.Click += btnVolver_Click_1;
+            btnVolver.Click += btnVolver_Click;
             // 
             // btnEliminar
             // 

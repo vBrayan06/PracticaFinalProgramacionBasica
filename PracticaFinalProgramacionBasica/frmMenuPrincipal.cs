@@ -41,7 +41,7 @@ namespace PracticaFinalProgramacionBasica
             Application.Exit();
         }
 
-        private void btnEliminarPaciente_Click_1(object sender, EventArgs e)
+        private void btnEliminarPaciente_Click(object sender, EventArgs e)
         {
             frmEliminarPaciente ventanaEliminar = new frmEliminarPaciente(gestorCompartido);
             ventanaEliminar.ShowDialog();

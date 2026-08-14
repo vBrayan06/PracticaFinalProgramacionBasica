@@ -63,16 +63,24 @@ namespace PracticaFinalProgramacionBasica
                 }
                 else
                 {
-                    MessageBox.Show(
-                        "No se encontró ningún paciente con esa Cédula.",
-                        "Sin resultados",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Information
+                    throw new PacienteNoEncontradoException(
+                        "No se encontró ningún paciente con esa Cédula."
                     );
-
-                    LimpiarCampos();
                 }
             }
+
+            catch (PacienteNoEncontradoException ex)
+            {
+                MessageBox.Show(
+                    ex.Message,
+                    "Paciente no encontrado",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+
+                LimpiarCampos();
+            }
+
             catch (Exception ex)
             {
                 MessageBox.Show(

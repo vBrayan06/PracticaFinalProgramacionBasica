@@ -89,7 +89,7 @@
             btnEliminarPaciente.TabIndex = 4;
             btnEliminarPaciente.Text = "Eliminar paciente";
             btnEliminarPaciente.UseVisualStyleBackColor = true;
-            btnEliminarPaciente.Click += btnEliminarPaciente_Click_1;
+            btnEliminarPaciente.Click += btnEliminarPaciente_Click;
             // 
             // btnListarPacientes
             // 
