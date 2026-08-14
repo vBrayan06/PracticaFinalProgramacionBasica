@@ -101,7 +101,6 @@
             // cmbEstado
             // 
             cmbEstado.FormattingEnabled = true;
-            cmbEstado.Items.AddRange(new object[] { "Ingresado", "", "En Observación", "", "De Alta", "", "Hospitalizado" });
             cmbEstado.Location = new Point(284, 524);
             cmbEstado.Name = "cmbEstado";
             cmbEstado.Size = new Size(254, 23);
@@ -138,7 +137,6 @@
             // cmbSexo
             // 
             cmbSexo.FormattingEnabled = true;
-            cmbSexo.Items.AddRange(new object[] { "Masculino", "Femenino" });
             cmbSexo.Location = new Point(284, 338);
             cmbSexo.Name = "cmbSexo";
             cmbSexo.Size = new Size(254, 23);
