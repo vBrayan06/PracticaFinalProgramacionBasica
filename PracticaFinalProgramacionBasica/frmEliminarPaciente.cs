@@ -11,6 +11,7 @@ namespace PracticaFinalProgramacionBasica
         {
             InitializeComponent();
             gestor = gestorCompartido;
+            btnEliminar.Enabled = false;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -38,6 +39,8 @@ namespace PracticaFinalProgramacionBasica
                     lblSexoInfo.Visible = true;
                     lblDiagnosticoInfo.Visible = true;
                     lblEstadoInfo.Visible = true;
+                    txtCedula.ReadOnly = true;
+                    btnEliminar.Enabled = true;
                 }
                 else
                 {
@@ -91,9 +94,7 @@ namespace PracticaFinalProgramacionBasica
 
                         if (respuesta == DialogResult.Yes)
                         {
-                            txtCedula.Clear();
                             LimpiarDatos();
-                            txtCedula.Focus();
                         }
                         else
                         {
@@ -105,6 +106,10 @@ namespace PracticaFinalProgramacionBasica
                         MessageBox.Show("Hubo un error y no se pudo eliminar el paciente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+                else
+                {
+                    LimpiarDatos();
+                }
             }
             catch (Exception ex)
             {
@@ -114,6 +119,9 @@ namespace PracticaFinalProgramacionBasica
 
         private void LimpiarDatos()
         {
+            txtCedula.ReadOnly = false;
+            txtCedula.Clear();
+
             lblNombreInfo.Text = "";
             lblEdadInfo.Text = "";
             lblSexoInfo.Text = "";
@@ -125,6 +133,8 @@ namespace PracticaFinalProgramacionBasica
             lblSexoInfo.Visible = false;
             lblDiagnosticoInfo.Visible = false;
             lblEstadoInfo.Visible = false;
+            btnEliminar.Enabled = false;
+            txtCedula.Focus();
         }
 
         private void btnVolver_Click_1(object sender, EventArgs e)

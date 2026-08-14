@@ -12,6 +12,8 @@ namespace PracticaFinalProgramacionBasica
             InitializeComponent();
             gestor = gestorCompartido;
             CargarOpciones();
+
+            btnActualizar.Enabled = false;
         }
 
         private void CargarOpciones()
@@ -32,9 +34,16 @@ namespace PracticaFinalProgramacionBasica
         {
             if (string.IsNullOrWhiteSpace(txtCedula.Text))
             {
-                MessageBox.Show("Por favor, ingresa la Cédula para buscar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(
+                    "Por favor, ingresa la Cédula para buscar.",
+                    "Aviso",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
                 return;
             }
+
+            btnBuscar.Enabled = false;
 
             try
             {
@@ -42,23 +51,40 @@ namespace PracticaFinalProgramacionBasica
 
                 if (pacienteEncontrado != null)
                 {
-                  
                     txtNombre.Text = pacienteEncontrado.Nombre_Completo;
                     txtEdad.Text = pacienteEncontrado.Edad.ToString();
                     cmbSexo.SelectedItem = pacienteEncontrado.Sexo;
                     txtDiagnostico.Text = pacienteEncontrado.Diagnostico;
                     cmbEstado.SelectedItem = pacienteEncontrado.Estado;
                     dtpFechaIngreso.Value = pacienteEncontrado.Fecha_De_Ingreso;
+
+                    txtCedula.ReadOnly = true;
+                    btnActualizar.Enabled = true;
                 }
                 else
                 {
-                    MessageBox.Show("No se encontró ningún paciente con esa Cédula.", "Sin resultados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(
+                        "No se encontró ningún paciente con esa Cédula.",
+                        "Sin resultados",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information
+                    );
+
                     LimpiarCampos();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ocurrió un error al buscar: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(
+                    "Ocurrió un error al buscar: " + ex.Message,
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+            }
+            finally
+            {
+                btnBuscar.Enabled = true;
             }
         }
 
@@ -113,8 +139,6 @@ namespace PracticaFinalProgramacionBasica
                     if (respuesta == DialogResult.Yes)
                     {
                         LimpiarCampos();
-                        txtCedula.Clear();
-                        txtCedula.Focus();
                     }
                     else
                     {
@@ -134,12 +158,21 @@ namespace PracticaFinalProgramacionBasica
 
         private void LimpiarCampos()
         {
+            txtCedula.ReadOnly = false;
+            txtCedula.Clear();
+
             txtNombre.Clear();
             txtEdad.Clear();
             txtDiagnostico.Clear();
+
             cmbSexo.SelectedIndex = -1;
             cmbEstado.SelectedIndex = -1;
+
             dtpFechaIngreso.Value = DateTime.Now;
+
+            btnActualizar.Enabled = false;
+
+            txtCedula.Focus();
         }
 
         private void btnVolver_Click(object sender, EventArgs e)

@@ -23,7 +23,21 @@ namespace PracticaFinalProgramacionBasica
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult respuesta = MessageBox.Show(
+                "¿Deseas listar nuevamente los pacientes?",
+                "Continuar",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (respuesta == DialogResult.Yes)
+            {
+                ActualizarGrid(gestor.ObtenerPacientes());
+            }
+            else
+            {
+                this.Close();
+            }
         }
     }
 }
