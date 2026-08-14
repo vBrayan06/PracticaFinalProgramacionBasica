@@ -2,8 +2,8 @@
 
 ## Integrantes
 
-* **[Nombre completo del integrante 1]** — Matrícula: **[Matrícula]**
-* **[Nombre completo del integrante 2]** — Matrícula: **[Matrícula]**
+* **[Brayan Mateo Guerrero]** — Matrícula: **[2025-0224]**
+* **[Michael Alberto Campechano Cueto]** — Matrícula: **[2025-0254]**
 
 ## Descripción
 
