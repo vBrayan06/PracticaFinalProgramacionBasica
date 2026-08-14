@@ -12,7 +12,7 @@ namespace PracticaFinalProgramacionBasica
         {
             InitializeComponent();
             gestor = gestorCompartido;
-            ActualizarGrid(gestor.ObtenerPacientes());
+            ActualizarGrid(new List<Paciente>());
         }
 
         private void ActualizarGrid(List<Paciente> lista)
@@ -27,7 +27,12 @@ namespace PracticaFinalProgramacionBasica
 
             if (string.IsNullOrWhiteSpace(termino))
             {
-                MessageBox.Show("Por favor, ingresa un nombre o cédula para buscar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(
+                    "Por favor, ingresa un nombre o cédula para buscar.",
+                    "Aviso",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
                 return;
             }
 
@@ -37,6 +42,7 @@ namespace PracticaFinalProgramacionBasica
             {
                 List<Paciente> resultadoID = new List<Paciente>();
                 resultadoID.Add(pacientePorID);
+
                 ActualizarGrid(resultadoID);
             }
             else
@@ -49,9 +55,37 @@ namespace PracticaFinalProgramacionBasica
                 }
                 else
                 {
-                    MessageBox.Show("No se encontró ningún paciente con ese nombre o cédula.", "Sin resultados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(
+                        "No se encontró ningún paciente con ese nombre o cédula.",
+                        "Sin resultados",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information
+                    );
+
                     ActualizarGrid(new List<Paciente>());
                 }
+            }
+            PreguntarOtraBusqueda();
+        }
+
+        private void PreguntarOtraBusqueda()
+        {
+            DialogResult respuesta = MessageBox.Show(
+                "¿Deseas realizar otra búsqueda?",
+                "Continuar",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (respuesta == DialogResult.Yes)
+            {
+                txtBuscar.Clear();
+                ActualizarGrid(new List<Paciente>());
+                txtBuscar.Focus();
+            }
+            else
+            {
+                this.Close();
             }
         }
 

@@ -100,6 +100,7 @@
             // 
             // cmbEstado
             // 
+            cmbEstado.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbEstado.FormattingEnabled = true;
             cmbEstado.Location = new Point(284, 524);
             cmbEstado.Name = "cmbEstado";
@@ -136,6 +137,7 @@
             // 
             // cmbSexo
             // 
+            cmbSexo.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbSexo.FormattingEnabled = true;
             cmbSexo.Location = new Point(284, 338);
             cmbSexo.Name = "cmbSexo";
